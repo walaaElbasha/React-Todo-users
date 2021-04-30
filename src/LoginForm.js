@@ -6,13 +6,13 @@ class LoginForm extends React.Component{
 
     constructor(props){
         super(props);
-        let loggedIn=false
+        
         const token=localStorage.getItem("Token")   
         this.state={
             username:"",
             password:"",
             email:"",
-            login:"false"
+            loggedIn:"false"
         }
     }   
     login=async ()=>{
